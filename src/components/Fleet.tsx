@@ -6,7 +6,7 @@ const fleet = [
   {
     type: 'Executive Sedan',
     model: 'Swift Dzire',
-    image: 'https://images.unsplash.com/photo-1555353540-64fd8b0ebd50?auto=format&fit=crop&q=80&w=800',
+    image: 'https://cdn-s3.autocarindia.com/legacy/cdni/Reviews/2%20(26).jpg?w=700&c=0',
     capacity: '3-4 Seats',
     capacityBracket: '2-4',
     features: ['Premium AC', 'GPS Tracked', 'Wi-Fi Enabled']
