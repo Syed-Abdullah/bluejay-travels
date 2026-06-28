@@ -28,11 +28,6 @@ const services = [
     description: 'Curated travel packages and reliable tour transport for corporate off-sites and institutional excursions, with drivers who know the routes.',
     image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200'
   },
-  {
-    title: 'Corporate Events',
-    description: 'Coordinated fleet movements for off-sites, conferences, and large-scale corporate gatherings. End-to-end logistics management.',
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200'
-  }
 ];
 
 export default function Services() {
