@@ -100,7 +100,7 @@ export default function Hero() {
             <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-brand shrink-0">
               <ShieldCheck size={24} />
             </div>
-            <p className="text-lg font-black text-deep-blue uppercase tracking-wider pr-2">SAFETY FIRST</p>
+            <p className="text-lg font-black text-deep-blue uppercase tracking-wider pr-2">40 YEARS OF TRUST</p>
           </motion.div>
 
           <motion.div 
