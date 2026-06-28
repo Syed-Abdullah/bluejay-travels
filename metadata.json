@@ -1,0 +1,6 @@
+{
+  "name": "Blue Jay Travels",
+  "description": "Enterprise corporate mobility company homepage",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
