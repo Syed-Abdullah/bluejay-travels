@@ -128,7 +128,7 @@ export default function Navbar() {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="md:hidden fixed bottom-4 left-4 right-4 z-50 glass-panel rounded-full mb-[env(safe-area-inset-bottom)]"
+        className="md:hidden fixed bottom-4 left-4 right-4 z-50 glass-panel rounded-full mb-[env(safe-area-inset-bottom)] backdrop-blur-md [backdrop-filter:blur(12px)] [-webkit-backdrop-filter:blur(12px)]"
       >
         <div className="flex items-stretch justify-between px-1 py-1">
           {mobileNavItems.map((navItem) => {
