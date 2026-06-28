@@ -1,6 +1,6 @@
 # Blue Jay Travels
 
-![Blue Jay Travels Demo](public/hero-bus.png)
+
 
 Blue Jay Travels is an enterprise mobility solutions provider offering reliable, safe, and scalable transportation services for modern organizations. From corporate employee transportation and school bus services to luxury rentals and airport transfers, we engineer mobility architectures for the modern world.
 
