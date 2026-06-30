@@ -75,14 +75,7 @@ export default function Fleet() {
               Meticulously maintained, technologically integrated, and piloted by trained professionals. Our fleet is the backbone of your mobility strategy.
             </p>
           </motion.div>
-          <motion.button 
-             initial={{ opacity: 0, x: 20 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             viewport={{ once: true }}
-             className="hidden md:inline-flex bg-white/50 glass-panel text-deep-blue px-6 py-3 rounded-full font-bold shadow-sm hover:bg-white/70 transition-all"
-          >
-            View Full Specifications
-          </motion.button>
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
