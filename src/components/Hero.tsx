@@ -56,7 +56,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-lg md:text-xl text-deep-blue/70 leading-relaxed max-w-xl"
           >
-           Blue Jay Travels provides employee transportation, executive travel, airport transfers, bus rentals, school transport, corporate events, and excursion services—delivering safe, punctual, and dependable journeys for businesses and organizations across Hyderabad.
+           Blue Jay Travels provides employee transportation, executive travel, airport transfers, bus rentals, school transport, and excursion services—delivering safe, punctual, and dependable journeys for businesses and organizations across Hyderabad.
           </motion.p>
 
           <motion.div

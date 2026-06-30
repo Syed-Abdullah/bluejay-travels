@@ -5,7 +5,6 @@
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Clients from './components/Clients';
 import Services from './components/Services';
 import Fleet from './components/Fleet';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -23,7 +22,6 @@ export default function App() {
       <main className="min-h-screen bg-transparent pb-24 md:pb-0">
         <Navbar />
         <Hero />
-        <Clients />
         <Services />
         <Stats />
         <Fleet />
