@@ -6,7 +6,7 @@ const fleet = [
   {
     type: 'Executive Sedan',
     model: 'Swift Dzire',
-    image: 'https://cdn-s3.autocarindia.com/legacy/cdni/Reviews/2%20(26).jpg?w=700&c=0',
+    image: '/dzire.jpeg',
     capacity: '3-4 Seats',
     capacityBracket: '2-4',
     features: ['Premium AC', 'GPS Tracked', 'Wi-Fi Enabled']
@@ -14,7 +14,7 @@ const fleet = [
   {
     type: 'Luxury SUV',
     model: 'Innova Hycross',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800',
+    image: '/innova.jpg',
     capacity: '6 Seats',
     capacityBracket: '4-7',
     features: ['Executive Seating', 'Enhanced Privacy', 'Chauffeur Driven']
@@ -30,7 +30,7 @@ const fleet = [
   {
     type: 'Mini Bus',
     model: 'Force Urbania',
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800',
+    image: '/urbania.png',
     capacity: '21-35 Seats',
     capacityBracket: '22-36',
     features: ['Air Suspension', 'Overhead Racks', 'Corporate Shuttle Ready']
@@ -38,7 +38,7 @@ const fleet = [
   {
     type: 'School & Staff Bus',
     model: 'Mahindra / Eicher / Tata',
-    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800',
+    image: "/schoolbus.png",
     capacity: '40-55 Seats',
     capacityBracket: '36-50',
     features: ['GPS Monitoring', 'First Aid Kit', 'Trained Attendants']
@@ -46,7 +46,7 @@ const fleet = [
   {
     type: 'Luxury Coach',
     model: 'Volvo / Benz',
-    image: 'https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?auto=format&fit=crop&q=80&w=800',
+    image: '/luxury.png',
     capacity: '40-45 Seats',
     capacityBracket: '36-50',
     features: ['Air Suspension','Entertainment']
