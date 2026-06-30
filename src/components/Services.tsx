@@ -5,17 +5,17 @@ import { useInquiry } from '../context/InquiryContext';
 const services = [
   {
     title: 'Corporate Employee Transportation',
-    description: 'Scalable daily commute solutions for large workforces. Optimized routing, real-time tracking, and absolute reliability for 24/7 operations.',
+    description: 'Getting your team to work — and back home safely — every single day. Flexible routes, dependable schedules, and a service your employees can count on around the clock.',
     image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&q=80&w=1200'
   },
   {
     title: 'School Transportation',
-    description: 'Safe, supervised, and comfortable bus services for educational institutions. Verified drivers, background-checked staff, and rigorous daily vehicle checks.',
+    description: 'Safe, supervised, and comfortable bus services for educational institutions. Verified drivers, background-checked staff, and daily vehicle checks.',
     image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1200'
   },
   {
     title: 'Bus & Car Rentals',
-    description: 'From luxury coaches for events to executive sedans for individual travel. A diverse fleet covering every group size and comfort requirement.',
+    description: "4 to 50 seaters, available for any need — short term or long term, we're ready when you are.",
     image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1200'
   },
   {
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: 'Tours & Excursions',
-    description: 'Curated travel packages and reliable tour transport for corporate off-sites and institutional excursions, with drivers who know the routes.',
+    description: 'From corporate outings and school excursions to family celebrations and religious journeys — we will take you anywhere across India, for a day or as long as you need.',
     image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200'
   },
 ];
@@ -49,10 +49,10 @@ export default function Services() {
           className="max-w-2xl mb-24"
         >
           <h2 className="text-4xl md:text-5xl font-black text-deep-blue tracking-tighter mb-6">
-            Engineered for <br/> Enterprise Scale.
+            Transportation <br/> That Works for Everyone.
           </h2>
           <p className="text-lg text-deep-blue/70 leading-relaxed">
-            We don't just move people; we design mobility architectures for modern organizations. From individual executives to thousands of employees.
+           Whether it's students, employees, or executives — we build transport solutions around your schedule, your routes, and your people.
           </p>
         </motion.div>
 
