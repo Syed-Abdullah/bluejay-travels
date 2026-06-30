@@ -22,7 +22,7 @@ const fleet = [
   {
     type: 'Tempo Traveller',
     model: 'Force Traveller',
-    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&q=80&w=800',
+    image: '/tempo.png',
     capacity: '12-26 Seats',
     capacityBracket: '12-22',
     features: ['Reclining Seats', 'AC & Heating', 'Ideal for Group Tours']
