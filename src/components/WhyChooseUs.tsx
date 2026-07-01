@@ -2,28 +2,28 @@ import { motion } from 'motion/react';
 
 const reasons = [
   {
-    title: 'Enterprise Safety Standards',
-    description: 'Military-grade encryption for routing data, mandatory background checks, GPS geofencing, and SOS integration for absolute peace of mind.'
+    title: 'Always On Time',
+    description: 'Reliable scheduling and disciplined operations that keep employees, students, and events moving without delays.'
   },
   {
-    title: 'Precision Analytics',
-    description: 'Custom dashboards for facilities managers to track fleet utilization, carbon footprint, cost per trip, and on-time performance.'
+    title: 'Safety First',
+    description: 'Experienced drivers, maintained vehicles, and strict operating standards for every journey we undertake.'
   },
   {
-    title: 'Transparent Billing',
-    description: 'No hidden charges. Automated invoicing integrated directly with your ERP systems (SAP, Oracle) for frictionless procurement.'
+    title: 'Fleet You Can Count On',
+    description: 'From executive cars to buses, every vehicle is maintained for comfort, reliability, and performance.'
   },
   {
-    title: '24/7 Control Center',
-    description: 'A dedicated command center monitoring every trip in real-time, proactively routing around traffic anomalies and weather events.'
+    title: 'Built to Scale',
+    description: 'Whether it\'s one airport transfer or daily corporate routes, we grow with your transportation needs.'
   },
   {
-    title: 'Compliance First',
-    description: 'Strict adherence to all state and national transport regulations, labor laws, and corporate ESG mandates.'
+    title: 'Responsive Support',
+    description: 'Quick communication, dependable coordination, and real people available whenever plans change.'
   },
   {
-    title: 'Trained Chauffeurs',
-    description: 'Drivers undergo rigorous behavioral training, defensive driving courses, and regular health checkups.'
+    title: 'Beyond the Daily Commute',
+    description: 'Trusted transportation for corporate events, school excursions, educational tours, and special travel requirements.'
   }
 ];
 
@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
               The Blue Jay <br/> Standard.
             </h2>
             <p className="text-lg text-deep-blue/70">
-              We don't operate like a transport vendor. We operate like your internal mobility partner.
+              Hyderabad's most trusted name in transport. Years of experience, thousands of happy passengers, and a commitment to service that never cuts corners.
             </p>
         </motion.div>
 

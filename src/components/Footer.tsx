@@ -8,9 +8,6 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-6">
                <img src="/logo.png" alt="Blue Jay Travels" className="h-10 w-auto" />
             </div>
-            <p className="text-deep-blue/70 text-sm leading-relaxed mb-6">
-              Enterprise mobility solutions for modern organizations. Reliability, safety, and scale.
-            </p>
             <div className="text-xs font-bold text-deep-blue/40 uppercase tracking-widest">
               EST. 1982 &bull; INDIA
             </div>
@@ -19,7 +16,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-deep-blue mb-6">Solutions</h4>
             <ul className="space-y-4">
-              {['Employee Transportation', 'School Transportation', 'Bus & Car Rentals', 'Airport Transfers'].map(item => (
+              {['Employee Transportation', 'School Transportation', 'Bus & Car Rentals', 'Airport Transfers','Tours & Excursions'].map(item => (
                 <li key={item}>
                   <a href="#solutions" className="text-sm text-deep-blue/70 hover:text-brand transition-colors">{item}</a>
                 </li>

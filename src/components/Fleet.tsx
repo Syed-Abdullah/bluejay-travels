@@ -17,7 +17,7 @@ const fleet = [
     image: '/innova.jpg',
     capacity: '6 Seats',
     capacityBracket: '4-7',
-    features: ['Executive Seating', 'Enhanced Privacy', 'Chauffeur Driven']
+    features: ['Executive Seating', 'Extra Luggage', 'Smooth Ride']
   },
   {
     type: 'Tempo Traveller',
@@ -25,7 +25,7 @@ const fleet = [
     image: '/tempo.png',
     capacity: '12-26 Seats',
     capacityBracket: '12-22',
-    features: ['Reclining Seats', 'AC & Heating', 'Ideal for Group Tours']
+    features: ['Spacious Interior', 'Doorstep Pickup & Drop', 'Ideal for Group Tours']
   },
   {
     type: 'Mini Bus',
@@ -33,7 +33,7 @@ const fleet = [
     image: '/urbania.png',
     capacity: '21-35 Seats',
     capacityBracket: '22-36',
-    features: ['Air Suspension', 'Overhead Racks', 'Corporate Shuttle Ready']
+    features: ['Reclining Seats', 'Smooth Ride', 'Corporate Shuttle Ready']
   },
   {
     type: 'School & Staff Bus',
@@ -49,7 +49,7 @@ const fleet = [
     image: '/luxury.png',
     capacity: '40-45 Seats',
     capacityBracket: '36-50',
-    features: ['Air Suspension','Entertainment']
+    features: ['Air Suspension','Entertainment','Executive Travel']
   }
 ];
 
@@ -72,7 +72,7 @@ export default function Fleet() {
               A Fleet Built for <br/> Reliability.
             </h2>
             <p className="text-lg text-deep-blue/70 leading-relaxed">
-              Meticulously maintained, technologically integrated, and piloted by trained professionals. Our fleet is the backbone of your mobility strategy.
+              Every vehicle in our fleet is regularly serviced, carefully maintained, and driven by trained professionals — so every ride feels safe, smooth, and reliable.
             </p>
           </motion.div>
           

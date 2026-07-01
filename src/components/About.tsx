@@ -3,16 +3,16 @@ import { ShieldCheck, Heart, Target } from 'lucide-react';
 
 const safetyPoints = [
   {
-    title: 'Rigorous Screening',
-    description: 'Every driver undergoes background checks, medical assessments, and behavioral reviews before they ever sit behind the wheel.'
+    title: 'Experienced Drivers',
+    description: 'Every driver is carefully selected, professionally trained, and committed to providing safe and dependable journeys.'
   },
   {
-    title: '24/7 Monitoring',
-    description: 'Our centralized command center tracks every vehicle in real time, enforcing strict adherence to routes and speed limits.'
+    title: 'Well-Maintained Fleet',
+    description: 'Our vehicles are regularly inspected and serviced to deliver reliable, comfortable transportation every day.'
   },
   {
-    title: 'Maintenance Excellence',
-    description: 'Vehicles are serviced on a fixed schedule at authorized centers, maintaining a standard of reliability that minimizes downtime.'
+    title: 'Safety You Can Trust',
+    description: "Over 40 years of dependable transportation with no fatal incidents — a record we're proud to uphold."
   }
 ];
 
@@ -33,7 +33,7 @@ export default function About() {
               Four Decades of <br /> Reliable Journeys.
             </h2>
             <p className="text-lg text-deep-blue/70 leading-relaxed">
-              From a single vehicle to a fleet trusted by hundreds of corporations and schools, Blue Jay Travels has spent over 40 years building a reputation on punctuality, safety, and quiet dependability. We don't just move people from A to B &mdash; we become a part of how organizations and institutions operate every single day.
+              Started with a single bus by <b>Ullah Saab</b>, Blue Jay Travels has spent over 40 years earning the trust of corporations, schools, and organizations across Hyderabad. Built on punctuality, safety, and dependable service, we don't just provide transportation—we become a reliable part of our clients' everyday operations.
             </p>
           </motion.div>
 

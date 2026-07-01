@@ -3,22 +3,20 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "Blue Jay Travels has handled our employee transport for years. Their punctuality is unmatched, and their drivers are consistently professional.",
-    name: 'Rajesh Khanna',
-    role: 'HR Director',
-    company: 'TechCorp Global'
+    quote: "Top notch experience, 100% would recommend travelling with this travels. Clean + Smooth ride.",
+    name: 'Abdullah',
+    role: 'Software Developer, Amazon'
   },
   {
-    quote: "Safety protocols they follow for our school buses give us complete peace of mind. They're the best school transport partner we've worked with.",
-    name: 'Sarah D\'Souza',
-    role: 'Principal',
-    company: 'Global Edu Academy'
+    quote: "I used their services twice and every time they amazed me with their superior service, best in class fleet and very mannered and patient drivers. I wholeheartedly recommend Blue Jay Travels for all your travel needs. You will not be disappointed.",
+    name: 'Amit Kumar Agarwal',
+    role: 'A Happy Customer'
   },
   {
-    quote: "Efficient, clean, and professional. We've used their luxury coaches for several annual offsites now, and the experience is consistently worry-free.",
-    name: 'Amit Sharma',
-    role: 'Operations Head',
-    company: 'Apex Manufacturing'
+    quote: "Blue Jay travels is one of the best. Their bus was super neat and AC was really good. I have used their bus service for my wedding during summer.",
+    name: 'Divya Sri',
+    role: 'A Happy Customer'
+    
   }
 ];
 
@@ -62,7 +60,7 @@ export default function Testimonials() {
               </p>
               <div>
                 <p className="font-bold text-deep-blue">{t.name}</p>
-                <p className="text-sm text-deep-blue/60">{t.role}, {t.company}</p>
+                <p className="text-sm text-deep-blue/60">{t.role}</p>
               </div>
             </motion.div>
           ))}
