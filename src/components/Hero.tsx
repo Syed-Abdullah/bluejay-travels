@@ -69,7 +69,7 @@ export default function Hero() {
               Request Proposal
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#fleet" className="flex items-center justify-center gap-2 bg-white border border-deep-blue/10 text-deep-blue px-10 py-5 rounded-2xl text-base font-bold hover:bg-slate-50 transition-all duration-300 shadow-sm">
+            <a href="#fleet" className="flex items-center justify-center gap-2 bg-deep-blue border border-deep-blue/10 text-white px-10 py-5 rounded-2xl text-base font-bold hover:bg-slate-50 transition-all duration-300 shadow-sm">
               Explore Fleet
             </a>
           </motion.div>
