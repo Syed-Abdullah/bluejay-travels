@@ -65,11 +65,11 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <a href="#contact" className="group flex items-center justify-center gap-2 bg-brand text-white px-10 py-5 rounded-2xl text-base font-bold hover:bg-brand/90 transition-all duration-300 shadow-[0_20px_50px_rgba(0,161,232,0.3)]">
+            <a href="#contact" className="group flex items-center justify-center gap-2 bg-deep-blue text-white px-10 py-5 rounded-2xl text-base font-bold hover:bg-brand/90 transition-all duration-300 shadow-[0_20px_50px_rgba(0,161,232,0.3)]">
               Request Proposal
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#fleet" className="flex items-center justify-center gap-2 bg-deep-blue border border-deep-blue/10 text-white px-10 py-5 rounded-2xl text-base font-bold hover:bg-slate-50 transition-all duration-300 shadow-sm">
+            <a href="#fleet" className="flex items-center justify-center gap-2 bg-brand border border-deep-blue/10 text-white px-10 py-5 rounded-2xl text-base font-bold hover:bg-deep-blue transition-all duration-300 shadow-sm">
               Explore Fleet
             </a>
           </motion.div>
