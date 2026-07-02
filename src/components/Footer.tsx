@@ -45,8 +45,10 @@ export default function Footer() {
                 +91 9848042774
               </li>
               <li className="text-sm text-deep-blue/70 pt-4">
-                B1-12/MIG, Huda Colony Road, Chanda Nagar, Hyderabad - 500050 Telangana
-              </li>
+              <a href="https://maps.app.goo.gl/zKMwZL8jShZYXbK16" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">
+                <u>B1-12/MIG, Huda Colony Road, Chanda Nagar, Hyderabad - 500050 Telangana </u> 
+              </a>
+            </li>
             </ul>
           </div>
 
