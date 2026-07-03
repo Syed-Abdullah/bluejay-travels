@@ -165,10 +165,14 @@ export default function Contact() {
           >
             <button
               onClick={() => {
+              if (window.innerWidth < 768) {
+                window.location.href = 'tel:+919848042774';
+              } else {
                 navigator.clipboard.writeText('+919848042774');
                 setCopiedPhone(true);
                 setTimeout(() => setCopiedPhone(false), 2000);
-              }}
+              }
+            }}
               className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors w-full text-left cursor-pointer"
             >
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-brand shrink-0">
@@ -179,7 +183,7 @@ export default function Contact() {
                 <p className="text-sm text-deep-blue/60">
                   {copiedPhone ? '✓ Copied to clipboard!' : '+91 9848042774'}
                 </p>
-                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline">Click to copy</p>
+                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
               </div>
             </button>
 
@@ -195,10 +199,14 @@ export default function Contact() {
 
             <button
               onClick={() => {
+              if (window.innerWidth < 768) {
+                window.location.href = 'mailto:bluejaytravelshyd@gmail.com';
+              } else {
                 navigator.clipboard.writeText('bluejaytravelshyd@gmail.com');
                 setCopied(true);
                 setTimeout(() => setCopied(false), 2000);
-              }}
+              }
+            }}
               className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors w-full text-left cursor-pointer"
             >
               <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 shrink-0">
@@ -209,7 +217,7 @@ export default function Contact() {
                 <p className="text-sm text-deep-blue/60">
                 {copied ? '✓ Copied to clipboard!' : 'bluejaytravelshyd@gmail.com'}
               </p>
-              <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline">Click to copy</p>
+              <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
               </div>
             </button>
 
