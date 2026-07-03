@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
 import type { FormEvent } from 'react';
-import { Phone, MessageCircle, Mail, Clock } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Clock, ChevronRight } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
 
 export default function Contact() {
@@ -178,13 +178,14 @@ export default function Contact() {
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-brand shrink-0">
                 <Phone size={20} />
               </div>
-              <div>
+              <div className="flex-1">
                 <p className="font-bold text-deep-blue">Call Sales Team</p>
                 <p className="text-sm text-deep-blue/60">
                   {copiedPhone ? '✓ Copied to clipboard!' : '+91 9848042774'}
                 </p>
                 <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
               </div>
+              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
             </button>
 
             <a href="https://wa.me/919848042774" target="_blank" rel="noopener noreferrer" className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors">
@@ -212,13 +213,14 @@ export default function Contact() {
               <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 shrink-0">
                 <Mail size={20} />
               </div>
-              <div>
+              <div className="flex-1">
                 <p className="font-bold text-deep-blue">Email Inquiry</p>
                 <p className="text-sm text-deep-blue/60">
-                {copied ? '✓ Copied to clipboard!' : 'bluejaytravelshyd@gmail.com'}
-              </p>
-              <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
+                  {copied ? '✓ Copied to clipboard!' : 'bluejaytravelshyd@gmail.com'}
+                </p>
+                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
               </div>
+              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
             </button>
 
             <div className="glass-panel rounded-[1.5rem] p-6">
