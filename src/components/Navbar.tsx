@@ -86,7 +86,7 @@ export default function Navbar() {
           isScrolled ? 'py-4' : 'py-6'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div
             className={`flex items-center justify-between rounded-full transition-all duration-500 border ${
               isScrolled 
@@ -97,10 +97,10 @@ export default function Navbar() {
             <div className="flex items-center gap-2 cursor-pointer shrink-0">
               <img src="/logo.png" alt="Blue Jay Travels" className="h-12 w-auto shrink-0" />
             </div>
-            <a href="#contact" className="md:hidden px-5 py-2.5 bg-brand text-white text-sm font-bold rounded-full shadow-lg hover:bg-brand/90 active:scale-95 transition-all">
+            <a href="#contact" className="lg:hidden px-5 py-2.5 bg-brand text-white text-sm font-bold rounded-full shadow-lg hover:bg-brand/90 active:scale-95 transition-all">
               Get Quote
             </a>
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-8">
               {['Solutions', 'Fleet', 'Technology', 'About', 'Contact'].map((item) => (
                 <a
                   key={item}
@@ -112,7 +112,7 @@ export default function Navbar() {
               ))}
             </nav>
 
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
               <a href="#contact" className="px-8 py-3 bg-deep-blue text-white text-sm font-bold rounded-full shadow-2xl hover:bg-brand transition-all transform hover:scale-105 active:scale-95 inline-block text-center">
                 Get a Quote
               </a>
@@ -128,7 +128,7 @@ export default function Navbar() {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="md:hidden fixed bottom-4 left-4 right-4 z-50 glass-panel rounded-full mb-[env(safe-area-inset-bottom)] backdrop-blur-md [backdrop-filter:blur(12px)] [-webkit-backdrop-filter:blur(12px)]"
+        className="lg:hidden fixed bottom-4 left-4 right-4 z-50 glass-panel rounded-full mb-[env(safe-area-inset-bottom)] backdrop-blur-md [backdrop-filter:blur(12px)] [-webkit-backdrop-filter:blur(12px)]"
       >
         <div className="flex items-stretch justify-between px-1 py-1">
           {mobileNavItems.map((navItem) => {

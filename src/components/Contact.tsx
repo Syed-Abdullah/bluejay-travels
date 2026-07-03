@@ -165,7 +165,7 @@ export default function Contact() {
           >
             <button
               onClick={() => {
-              if (window.innerWidth < 768) {
+              if (window.innerWidth < 1024) {
                 window.location.href = 'tel:+919848042774';
               } else {
                 navigator.clipboard.writeText('+919848042774');
@@ -183,9 +183,9 @@ export default function Contact() {
                 <p className="text-sm text-deep-blue/60">
                   {copiedPhone ? '✓ Copied to clipboard!' : '+91 9848042774'}
                 </p>
-                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
+                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden lg:block">Click to copy</p>
               </div>
-              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
+              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 lg:hidden" />
             </button>
 
            <a href="https://wa.me/919848042774" target="_blank" rel="noopener noreferrer" className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors">
@@ -196,12 +196,12 @@ export default function Contact() {
                 <p className="font-bold text-deep-blue">WhatsApp Support</p>
                 <p className="text-sm text-deep-blue/60">+919848042774</p>
               </div>
-              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
+              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 lg:hidden" />
             </a>
 
             <button
               onClick={() => {
-              if (window.innerWidth < 768) {
+              if (window.innerWidth < 1024) {
                 window.location.href = 'mailto:bluejaytravelshyd@gmail.com';
               } else {
                 navigator.clipboard.writeText('bluejaytravelshyd@gmail.com');
@@ -219,9 +219,9 @@ export default function Contact() {
                 <p className="text-sm text-deep-blue/60">
                   {copied ? '✓ Copied to clipboard!' : 'bluejaytravelshyd@gmail.com'}
                 </p>
-                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden md:block">Click to copy</p>
+                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline hidden lg:block">Click to copy</p>
               </div>
-              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
+              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 lg:hidden" />
             </button>
 
             <div className="glass-panel rounded-[1.5rem] p-6">
