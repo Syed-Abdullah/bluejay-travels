@@ -16,7 +16,7 @@ const services = [
   {
     title: 'Bus & Car Rentals',
     description: "4 to 50 seaters, available for any need — short term or long term, we're ready when you are.",
-    image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1200'
+    image: '/bus-car.png'
   },
   {
     title: 'Airport Transfers',
