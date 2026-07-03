@@ -1,3 +1,4 @@
+import { Instagram, Linkedin } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-transparent pt-32 pb-12 border-t border-white/60 relative z-10 glass-panel mt-12 rounded-t-[40px]">
@@ -8,9 +9,20 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-6">
                <img src="/logo.png" alt="Blue Jay Travels" className="h-10 w-auto" />
             </div>
-            <div className="text-xs font-bold text-deep-blue/40 uppercase tracking-widest">
-              EST. 1982 &bull; INDIA
-            </div>
+           <div className="text-xs font-bold text-deep-blue/40 uppercase tracking-widest">
+            EST. 1982 &bull; INDIA
+          </div>
+          <div className="flex items-center gap-4 mt-6">
+            <a href="https://www.instagram.com/bluejay_travels/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-deep-blue/10 flex items-center justify-center text-deep-blue/50 hover:bg-brand hover:text-white transition-all">
+              <Instagram size={16} />
+            </a>
+            <a href="https://x.com/BlueJayTravels" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-deep-blue/10 flex items-center justify-center text-deep-blue/50 hover:bg-brand hover:text-white transition-all">
+            <span className="text-sm font-bold">𝕏</span>
+            </a>
+            <a href="https://www.linkedin.com/company/bluejaytravels/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-deep-blue/10 flex items-center justify-center text-deep-blue/50 hover:bg-brand hover:text-white transition-all">
+              <Linkedin size={16} />
+            </a>
+          </div>
           </div>
 
           <div>
