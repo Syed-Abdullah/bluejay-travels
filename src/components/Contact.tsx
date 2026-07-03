@@ -188,14 +188,15 @@ export default function Contact() {
               <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
             </button>
 
-            <a href="https://wa.me/919848042774" target="_blank" rel="noopener noreferrer" className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors">
+           <a href="https://wa.me/919848042774" target="_blank" rel="noopener noreferrer" className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors">
               <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
                 <MessageCircle size={20} />
               </div>
-              <div>
+              <div className="flex-1">
                 <p className="font-bold text-deep-blue">WhatsApp Support</p>
-                <p className="text-sm text-deep-blue/60">+91 9848042774</p>
+                <p className="text-sm text-deep-blue/60">+919848042774</p>
               </div>
+              <ChevronRight size={18} className="text-deep-blue/30 shrink-0 md:hidden" />
             </a>
 
             <button
