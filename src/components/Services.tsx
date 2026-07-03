@@ -21,7 +21,7 @@ const services = [
   {
     title: 'Airport Transfers',
     description: 'Seamless first and last-mile connectivity. Flight tracking integration ensures we are there before you land.',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1200'
+    image: '/airport.png'
   },
   {
     title: 'Tours & Excursions',
