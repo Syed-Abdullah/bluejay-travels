@@ -9,6 +9,7 @@ export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const [copiedPhone, setCopiedPhone] = useState(false);
   const { selectedService, selectedCapacity } = useInquiry();
   const [serviceValue, setServiceValue] = useState('');
   const [capacityValue, setCapacityValue] = useState('');
@@ -162,15 +163,25 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="flex flex-col gap-6"
           >
-            <a href="tel:+919848042774" className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors">
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText('+919848042774');
+                setCopiedPhone(true);
+                setTimeout(() => setCopiedPhone(false), 2000);
+              }}
+              className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors w-full text-left cursor-pointer"
+            >
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-brand shrink-0">
                 <Phone size={20} />
               </div>
               <div>
                 <p className="font-bold text-deep-blue">Call Sales Team</p>
-                <p className="text-sm text-deep-blue/60">+91 9848042774</p>
+                <p className="text-sm text-deep-blue/60">
+                  {copiedPhone ? '✓ Copied to clipboard!' : '+91 9848042774'}
+                </p>
+                <p className="text-xs text-deep-blue/40 mt-0.5 hover:underline">Click to copy</p>
               </div>
-            </a>
+            </button>
 
             <a href="https://wa.me/919848042774" target="_blank" rel="noopener noreferrer" className="glass-panel rounded-[1.5rem] p-6 flex items-center gap-4 hover:bg-white/60 transition-colors">
               <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
@@ -178,7 +189,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-bold text-deep-blue">WhatsApp Support</p>
-                <p className="text-sm text-deep-blue/60">Available for instant quotes</p>
+                <p className="text-sm text-deep-blue/60">+91 9848042774</p>
               </div>
             </a>
 

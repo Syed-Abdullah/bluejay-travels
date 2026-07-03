@@ -6,12 +6,12 @@ const services = [
   {
     title: 'Corporate Employee Transportation',
     description: 'Getting your team to work — and back home safely — every single day. Flexible routes, dependable schedules, and a service your employees can count on around the clock.',
-    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://www.daimlertruck.com/fileadmin/_processed_/e/d/csm_1-kachel_6c6cf2998c.webp'
   },
   {
     title: 'School Transportation',
     description: 'Safe, supervised, and comfortable bus services for educational institutions. Verified drivers, background-checked staff, and daily vehicle checks.',
-    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://www.daimlertruck.com/fileadmin/_processed_/2/4/csm_2-titel_6675a496af.jpg'
   },
   {
     title: 'Bus & Car Rentals',
