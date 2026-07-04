@@ -39,7 +39,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-deep-blue mb-6">Company</h4>
             <ul className="space-y-4">
-              {[['About Us', '#about'], ['Fleet', '#fleet'], ['Safety Standards', '#technology'], ['Contact', '#contact']].map(([label, href]) => (
+              {[['About Us', '#about'], ['Fleet', '#fleet'], ['Safety Standards', '#why-choose-us'], ['Contact', '#contact']].map(([label, href]) => (
                 <li key={label}>
                   <a href={href} className="text-sm text-deep-blue/70 hover:text-brand transition-colors">{label}</a>
                 </li>

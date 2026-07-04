@@ -5,7 +5,7 @@ import { Briefcase, Bus, Cpu, Info, Phone } from 'lucide-react';
 const mobileNavItems = [
   { label: 'Solutions', href: '#solutions', icon: Briefcase },
   { label: 'Fleet', href: '#fleet', icon: Bus },
-  { label: 'Tech', href: '#technology', icon: Cpu },
+  { label: 'Why Us', href: '#why-choose-us', icon: Cpu },
   { label: 'About', href: '#about', icon: Info },
   { label: 'Contact', href: '#contact', icon: Phone },
 ];
@@ -101,10 +101,10 @@ export default function Navbar() {
               Get Quote
             </a>
             <nav className="hidden lg:flex items-center gap-8">
-              {['Solutions', 'Fleet', 'Technology', 'About', 'Contact'].map((item) => (
+              {['Solutions', 'Fleet', 'Why Us', 'About', 'Contact'].map((item) => (
                 <a
                   key={item}
-                  href={`#${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                   className="text-sm font-semibold text-deep-blue/70 uppercase tracking-widest hover:text-brand transition-colors"
                 >
                   {item}

@@ -6,27 +6,27 @@ const services = [
   {
     title: 'Corporate Employee Transportation',
     description: 'Getting your team to work — and back home safely — every single day. Flexible routes, dependable schedules, and a service your employees can count on around the clock.',
-    image: 'https://www.daimlertruck.com/fileadmin/_processed_/e/d/csm_1-kachel_6c6cf2998c.webp'
+    image: '/corp-transport.webp'
   },
   {
     title: 'School Transportation',
     description: 'Safe, supervised, and comfortable bus services for educational institutions. Verified drivers, background-checked staff, and daily vehicle checks.',
-    image: 'https://www.daimlertruck.com/fileadmin/_processed_/2/4/csm_2-titel_6675a496af.jpg'
+    image: '/school-transport.webp'
   },
   {
     title: 'Bus & Car Rentals',
     description: "4 to 50 seaters, available for any need — short term or long term, we're ready when you are.",
-    image: '/bus-car.png'
+    image: '/bus-car.webp'
   },
   {
     title: 'Airport Transfers',
     description: 'Seamless first and last-mile connectivity. Flight tracking integration ensures we are there before you land.',
-    image: '/airport.png'
+    image: '/airport.webp'
   },
   {
     title: 'Tours & Excursions',
     description: 'From corporate outings and school excursions to family celebrations and religious journeys — we will take you anywhere across India, for a day or as long as you need.',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200'
+    image: '/tours.webp'
   },
 ];
 

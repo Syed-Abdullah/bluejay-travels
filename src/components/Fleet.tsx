@@ -6,7 +6,7 @@ const fleet = [
   {
     type: 'Executive Sedan',
     model: 'Swift Dzire',
-    image: '/dzire.jpeg',
+    image: '/dzire.webp',
     capacity: '3-4 Seats',
     capacityBracket: '2-4',
     features: ['Premium AC', 'GPS Tracked', 'Wi-Fi Enabled']
@@ -14,7 +14,7 @@ const fleet = [
   {
     type: 'Luxury SUV',
     model: 'Innova Hycross',
-    image: '/innova.jpg',
+    image: '/innova.webp',
     capacity: '6 Seats',
     capacityBracket: '4-7',
     features: ['Executive Seating', 'Extra Luggage', 'Smooth Ride']
@@ -22,7 +22,7 @@ const fleet = [
   {
     type: 'Tempo Traveller',
     model: 'Force Traveller',
-    image: '/tempo.png',
+    image: '/tempo.webp',
     capacity: '12-26 Seats',
     capacityBracket: '12-22',
     features: ['Spacious Interior', 'Doorstep Pickup & Drop', 'Ideal for Group Tours']
@@ -30,7 +30,7 @@ const fleet = [
   {
     type: 'Mini Bus',
     model: 'Force Urbania',
-    image: '/urbania.png',
+    image: '/urbania.webp',
     capacity: '21-35 Seats',
     capacityBracket: '22-36',
     features: ['Reclining Seats', 'Smooth Ride', 'Corporate Shuttle Ready']
@@ -38,7 +38,7 @@ const fleet = [
   {
     type: 'School & Staff Bus',
     model: 'Mahindra / Eicher / Tata',
-    image: "/schoolbus.png",
+    image: "/schoolbus.webp",
     capacity: '40-55 Seats',
     capacityBracket: '36-50',
     features: ['GPS Monitoring', 'First Aid Kit', 'Trained Attendants']
@@ -46,7 +46,7 @@ const fleet = [
   {
     type: 'Luxury Coach',
     model: 'Volvo / Benz',
-    image: '/luxury.png',
+    image: '/luxury.webp',
     capacity: '40-45 Seats',
     capacityBracket: '36-50',
     features: ['Air Suspension','Entertainment','Executive Travel']

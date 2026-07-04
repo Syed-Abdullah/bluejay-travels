@@ -45,7 +45,7 @@ export default function About() {
             className="relative h-[360px] rounded-[40px] overflow-hidden shadow-xl bg-slate-100"
           >
             <img
-              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1200"
+              src="/about-us.webp"
               alt="Blue Jay Travels fleet"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"

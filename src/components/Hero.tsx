@@ -84,7 +84,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 rounded-[40px] overflow-hidden shadow-2xl bg-slate-100">
              <img 
-                src="/hero-bus.png" 
+                src="/hero-bus.webp" 
                 alt="Blue Jay Premium Fleet" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
              />

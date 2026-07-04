@@ -29,7 +29,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="technology" className="py-32 bg-transparent">
+    <section id="why-choose-us" className="py-32 bg-transparent">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
