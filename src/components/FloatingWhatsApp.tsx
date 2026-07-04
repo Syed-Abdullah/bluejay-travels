@@ -16,8 +16,6 @@ export default function FloatingWhatsApp() {
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle size={32} />
-      {/* Ping animation effect */}
-      <span className="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75 top-0 left-0 animate-ping -z-10"></span>
     </motion.a>
   );
 }
