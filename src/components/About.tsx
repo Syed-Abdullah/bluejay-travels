@@ -47,6 +47,7 @@ export default function About() {
             <img
               src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1200"
               alt="Blue Jay Travels fleet"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </motion.div>

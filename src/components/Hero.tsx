@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useRef } from 'react';
-import { ArrowRight, ShieldCheck, Clock, MapPin } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Clock } from 'lucide-react';
 
 export default function Hero() {
   const containerRef = useRef(null);

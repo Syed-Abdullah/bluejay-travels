@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Users, Wind, Map, Shield } from 'lucide-react';
+import { Users } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
 
 const fleet = [
@@ -93,6 +93,7 @@ export default function Fleet() {
               <img 
                 src={vehicle.image} 
                 alt={vehicle.type}
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 group-hover:rotate-1 transition-transform duration-700 ease-[0.16,1,0.3,1]"
               />
 
