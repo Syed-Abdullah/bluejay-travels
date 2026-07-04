@@ -71,8 +71,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Blue Jay Travels. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-deep-blue/50 hover:text-deep-blue transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm text-deep-blue/50 hover:text-deep-blue transition-colors">Terms of Service</a>
+            <a href="/privacy-policy.html" className="text-sm text-deep-blue/50 hover:text-deep-blue transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service.html" className="text-sm text-deep-blue/50 hover:text-deep-blue transition-colors">Terms of Service</a>
             <a href="#" className="text-sm text-deep-blue/50 hover:text-deep-blue transition-colors">ISO 9001:2015 Certified</a>
           </div>
         </div>
