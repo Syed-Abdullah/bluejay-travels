@@ -38,6 +38,7 @@ export default function Contact() {
       pickup_location: (form.elements.namedItem('pickup_location') as HTMLInputElement).value,
       capacity: capacityValue,
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem('website') as HTMLInputElement).value,
     };
 
     try {
@@ -99,6 +100,11 @@ export default function Contact() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-6">
+                {/* Honeypot field - visually hidden but bots will fill it */}
+                <div className="opacity-0 absolute w-0 h-0 -z-10 overflow-hidden" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <input type="text" name="website" id="website" tabIndex={-1} autoComplete="off" />
+                </div>
                 <div>
                   <label className="block text-sm font-semibold text-deep-blue/70 mb-2">Full Name *</label>
                   <input name="full_name" required type="text" placeholder="e.g. John Doe" className="w-full px-4 py-3 rounded-xl border border-deep-blue/10 bg-white/60 focus:outline-none focus:ring-2 focus:ring-brand" />

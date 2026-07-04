@@ -27,7 +27,16 @@ export default async function handler(req, res) {
     pickup_location,
     capacity,
     message,
+    website,
   } = req.body;
+
+  // 3. Honeypot Check (Anti-Bot)
+  if (website) {
+    // If the invisible 'website' field is filled, it's a bot.
+    // Return a fake success so the bot thinks it worked and stops trying.
+    console.log('Bot blocked by honeypot');
+    return res.status(200).json({ success: true });
+  }
 
   if (!full_name || !phone) {
     return res.status(400).json({ error: 'Name and phone are required.' });
