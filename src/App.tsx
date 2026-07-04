@@ -16,6 +16,8 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { InquiryProvider } from './context/InquiryContext';
 
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+
 export default function App() {
   return (
     <InquiryProvider>
@@ -31,6 +33,7 @@ export default function App() {
         <Contact />
         <Footer />
         <ScrollToTop />
+        <FloatingWhatsApp />
       </main>
     </InquiryProvider>
   );

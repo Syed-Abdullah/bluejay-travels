@@ -1,4 +1,5 @@
-import { motion } from 'motion/react';
+import { motion, useMotionValue, useTransform, animate, useInView } from 'motion/react';
+import { useEffect, useRef } from 'react';
 
 const stats = [
   { value: '40+', label: 'Years Experience' },
@@ -8,6 +9,35 @@ const stats = [
   { value: '2500+', label: 'Employees Transported Daily' },
   { value: '99.9%', label: 'Corporate Satisfaction' },
 ];
+
+function Counter({ value }: { value: string }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  
+  const numMatch = value.match(/[\d,.]+/);
+  const number = numMatch ? parseFloat(numMatch[0].replace(/,/g, '')) : 0;
+  const suffix = value.replace(/[\d,.]+/, '');
+  const isDecimal = value.includes('.');
+
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => {
+    if (isDecimal) return latest.toFixed(1);
+    return Math.round(latest).toLocaleString();
+  });
+
+  useEffect(() => {
+    if (isInView) {
+      animate(count, number, { duration: 2, ease: "easeOut" });
+    }
+  }, [count, isInView, number]);
+
+  return (
+    <span ref={ref}>
+      <motion.span>{rounded}</motion.span>
+      {suffix}
+    </span>
+  );
+}
 
 export default function Stats() {
   return (
@@ -28,7 +58,7 @@ export default function Stats() {
               className="flex flex-col items-center text-center"
             >
               <div className="text-4xl md:text-5xl font-black text-deep-blue tracking-tighter mb-2">
-                {stat.value}
+                <Counter value={stat.value} />
               </div>
               <div className="text-[10px] text-deep-blue/50 font-bold uppercase tracking-widest">
                 {stat.label}
