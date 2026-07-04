@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
 import type { FormEvent } from 'react';
-import { Phone, MessageCircle, Mail, Clock, ChevronRight } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Clock, ChevronRight, CheckCircle } from 'lucide-react';
 import { useInquiry } from '../context/InquiryContext';
 
 export default function Contact() {
@@ -84,12 +84,19 @@ export default function Contact() {
             className="lg:col-span-2 glass-panel rounded-[2rem] p-8 md:p-10"
           >
             {submitted ? (
-              <div className="flex flex-col items-center justify-center text-center py-16">
+              <motion.div 
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                className="flex flex-col items-center justify-center text-center py-16"
+              >
+                <div className="w-16 h-16 bg-emerald-100 text-emerald-500 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                  <CheckCircle size={32} />
+                </div>
                 <h3 className="text-2xl font-bold text-deep-blue mb-3">Thanks &mdash; we'll be in touch.</h3>
                 <p className="text-deep-blue/70 max-w-sm">
                   Your inquiry has been received. One of our team members will reach out within 2 business days.
                 </p>
-              </div>
+              </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-6">
                 <div>
@@ -102,7 +109,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-deep-blue/70 mb-2">Phone Number *</label>
-                  <input name="phone" required type="tel" placeholder="+91 98765 43210" className="w-full px-4 py-3 rounded-xl border border-deep-blue/10 bg-white/60 focus:outline-none focus:ring-2 focus:ring-brand" />
+                  <input name="phone" required type="tel" minLength={10} pattern="[\d\s\-\+]+" title="Please enter a valid phone number (minimum 10 digits)" placeholder="+91 98765 43210" className="w-full px-4 py-3 rounded-xl border border-deep-blue/10 bg-white/60 focus:outline-none focus:ring-2 focus:ring-brand" />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-deep-blue/70 mb-2">Email Address</label>
