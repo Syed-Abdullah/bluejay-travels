@@ -1,9 +1,12 @@
 import { createClient } from '@supabase/supabase-js';
+import { Resend } from 'resend';
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_SERVICE_ROLE_KEY
 );
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   // 1. CORS / Origin Protection
@@ -60,6 +63,35 @@ export default async function handler(req, res) {
   if (error) {
     console.error('Supabase error:', error);
     return res.status(500).json({ error: 'Failed to save inquiry.' });
+  }
+
+  // 4. Send Email Notification
+  if (process.env.RESEND_API_KEY) {
+    try {
+      await resend.emails.send({
+        from: 'Blue Jay Travels <onboarding@resend.dev>', // Resend testing domain
+        to: 'bluejaytravelshyd@gmail.com', // Make sure you sign up to Resend with this exact email
+        subject: `New Lead: ${full_name} - ${service || 'General Inquiry'}`,
+        html: `
+          <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <h2 style="color: #1a365d;">New Transportation Inquiry 🚐</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${full_name}</td></tr>
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${phone}</td></tr>
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${email || 'N/A'}</td></tr>
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Organization:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${organization || 'N/A'}</td></tr>
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Service:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${service || 'N/A'}</td></tr>
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Capacity:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${capacity || 'N/A'}</td></tr>
+              <tr><td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Location:</strong></td><td style="padding: 10px; border-bottom: 1px solid #eee;">${pickup_location || 'N/A'}</td></tr>
+              <tr><td style="padding: 10px;"><strong>Message:</strong></td><td style="padding: 10px;">${message || 'N/A'}</td></tr>
+            </table>
+          </div>
+        `
+      });
+    } catch (emailError) {
+      console.error('Failed to send email:', emailError);
+      // We don't throw an error here because the lead was successfully saved to Supabase
+    }
   }
 
   return res.status(200).json({ success: true });
