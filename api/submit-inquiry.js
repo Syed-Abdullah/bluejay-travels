@@ -70,7 +70,7 @@ export default async function handler(req, res) {
     try {
       await resend.emails.send({
         from: 'Blue Jay Travels <onboarding@resend.dev>', // Resend testing domain
-        to: 'bluejaytravelshyd@gmail.com', // Make sure you sign up to Resend with this exact email
+        to: 'leadsbluejay@gmail.com', // Updated to match your new Resend account
         subject: `New Lead: ${full_name} - ${service || 'General Inquiry'}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
