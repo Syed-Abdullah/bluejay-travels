@@ -11,7 +11,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export default async function handler(req, res) {
   // 1. CORS / Origin Protection
   const origin = req.headers.origin || req.headers.referer || '';
-  const isAllowedOrigin = origin.includes('localhost') || origin.includes('bluejay-travels.vercel.app');
+  const isAllowedOrigin = origin.includes('localhost') || origin.includes('bluejay-travels.vercel.app') || origin.includes('bluejaytravels.in');
   
   if (!isAllowedOrigin && process.env.NODE_ENV === 'production') {
     return res.status(403).json({ error: 'Forbidden origin' });
