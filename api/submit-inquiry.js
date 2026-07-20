@@ -41,8 +41,20 @@ export default async function handler(req, res) {
     return res.status(200).json({ success: true });
   }
 
-  if (!full_name || !phone) {
-    return res.status(400).json({ error: 'Name and phone are required.' });
+  if (!full_name || full_name.trim().length < 2) {
+    return res.status(400).json({ error: 'Please provide a valid name.' });
+  }
+
+  // Strip all non-numeric characters from the phone to count actual digits
+  const phoneDigits = phone ? phone.replace(/\D/g, '') : '';
+  if (phoneDigits.length < 10 || phoneDigits.length > 15) {
+    return res.status(400).json({ error: 'Please provide a valid 10+ digit phone number.' });
+  }
+
+  // If email is provided, verify it actually looks like an email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email && !emailRegex.test(email)) {
+    return res.status(400).json({ error: 'Please provide a valid email address.' });
   }
 
   // 2. Data Length Limits (Anti-Database Bloat)
